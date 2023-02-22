@@ -1,7 +1,12 @@
 if __name__ == "__main__":
     
+    nome_produto1 = input("Informe o nome do Primeiro Produto: ")
     produto1 = int(input("Informe o valor do Primeiro Produto: "))
+
+    nome_produto2 = input("Informe o nome do Segundo Produto: ")
     produto2 = int(input("Informe o valor do Segundo Produto: "))
+    
+    nome_produto3 = input("Informe o nome do Terceiro Produto: ")
     produto3 = int(input("Informe o valor do Terceiro Produto: "))
 
     desconto = 0
@@ -31,6 +36,17 @@ if __name__ == "__main__":
         Valor Total: R${soma_produtos}.
         Valor com Desconto: R${desconto}.
         Valor sem Desconto: R${soma_produtos}.
+
+        ***************************************
+        Produtos Comprados.
+        ***************************************
+
+        Nome Produto: {nome_produto1}  Valor Produto: R${produto1}.
+        ----------------------------------------------------------
+        Nome Produto: {nome_produto2}  Valor Produto: R${produto2}.
+        ----------------------------------------------------------
+        Nome Produto: {nome_produto3}  Valor Produto: R${produto3}.
+
 
         """
 
