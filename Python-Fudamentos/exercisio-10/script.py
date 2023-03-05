@@ -8,7 +8,7 @@ if __name__ == "__main__":
 
     for num in lista_randomicos:
         if num not in lista_num:
-            lista_num.append(num)
+            lista_num.append(num) 
 
     print(lista_randomicos)
     print(list(set(lista_randomicos)))
