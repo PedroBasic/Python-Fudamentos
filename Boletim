@@ -1,0 +1,37 @@
+alunos_e_notas = list()
+
+while True:
+    nome = str(input("Nome: "))
+    nt1 = float(input("Nota 1: "))
+    nt2 = float(input("Nota 2: "))
+    media = nt1 + nt2 / 2
+
+    alunos_e_notas.append([nome, [nt1, nt2], media])
+
+    escolha = input("Deseja cotinuar [S/N]: ").upper()
+    if escolha in "Nn":
+        break
+
+print('-='*15)
+print(f'{"NO.":<4}{"NOME":<10}{"MEDIA":>8}')
+print('-='*15)
+
+for i, n in enumerate(alunos_e_notas):
+    print(f'{i:<4}{n[0]:<10}{n[2]:>8}')
+print('-='*15)
+
+while True:
+    op = int(input("Informe qual boletim deseja verificar (99: Interrompe): "))
+
+    if op <= len(alunos_e_notas) - 1:
+        print(f'{alunos_e_notas[op][0]} {alunos_e_notas[op][2]}')
+
+    if op == 99:
+        print('Fim...')
+        break
+
+
+
+    
+
+
