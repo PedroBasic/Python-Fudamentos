@@ -1,0 +1,49 @@
+# E um metodo composto igual as (listas) porém e utilizados indices literarios ou seja podemos personalizar os indices. 
+# Esse e o Dicionarios {}
+
+
+dados = dict()
+
+dados = {'nome':'Pedro', 'idade':20}
+
+# Para chamar os valores dentro da variavel. primeiro chamamos a variavel (dados) e depois entre colchete definimos qual dados que 
+#qué seja apresentado (dado['nome'])
+
+print(dados['nome'])
+print(dados['idade'])
+
+# Para adicionarmos um valor dentro de uma varivel do tipo Dict(). Usamos a seguinte sintaxe.
+
+dados['sexo'] = 'M'
+print(dados)
+
+# Para remover elemento utilizamos o mesmo metodo o (del)
+
+del dados['sexo']
+print(dados)
+
+# Existe 3 metodos de consulta a um dicionario ( Values(), keys() e Items()).
+
+
+filme = {'titulo': 'Star Wars',
+         'ano': 1977,
+         'diretor': 'George lucas'
+}
+
+
+# Values() -> irá consultar somente os valores. (Star Wars, 1977, George lucas)
+print(filme.values())
+
+# Keys() -> irá consultar somente o que está armazenando os valores ('Titulo', 'Ano', 'Diretor')
+print(filme.keys())
+
+# Items() -> irá consultar todas as informações contidas no Dict() tanto as keys() quanto os values().
+print(filme.items())
+
+filme['titulo'] = 'Homem de Ferro'
+filme['ano'] = 2020
+filme['diretor'] = 'David Whashitow'
+
+for k, v in filme.items():
+    print(f'O {k} e {v}')
+
